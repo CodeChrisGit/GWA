@@ -1,0 +1,112 @@
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #400d0d;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    padding: 20px;
+
+}
+.left {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.left h1 {
+    color: yellow;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.left p {
+    color: white;
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    background-color: #000;
+    padding: 30px;
+    border-radius: 15px;
+    width: 450px;
+    height: 400px;
+}
+.card h2 {
+    color: yellow;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.error {
+    color: yellow;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.form-group label {
+    margin-bottom: 5px;
+}
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ddd;
+}
+.card input[type="submit"] {
+    width: 350px;
+    padding: 10px;
+    align-items: center;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+    display: block;
+    margin: 20px auto 0 auto;
+}
+.card input[type="submit"]:hover {
+    background-color: #a2942a;
+    color: white;
+    box-shadow: 0 0 15px rgba(255, 255, 0, 0.7);
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left, .right {
+        width: 100%;
+        text-align: center;
+    }
+}

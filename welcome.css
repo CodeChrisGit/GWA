@@ -1,0 +1,79 @@
+body {
+    background-color: #111;
+    color: white;
+    font-family: Arial;
+    padding: 20px;
+}
+.box {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: auto;
+}
+h2, h3 {
+    margin-bottom: 5px;
+}
+.gwa, .message {
+    margin-top: 10px;
+}
+.highlight {
+    font-weight: bold;
+    color: green;
+}
+table {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #444;
+    text-align: left;
+}
+th {
+    background-color: #333;
+}
+.gwa {
+    background-color: #333;
+    padding: 10px;
+    text-align: right;
+    font-weight: bold;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.message {
+    background-color: #333;
+    padding: 15px;
+    margin-top: 20px;
+    color: #eee;
+    border-left: 5px solid yellow;
+}
+.highlight {
+    color: yellow;
+    font-weight: bold;
+}
+.semester-toggle-wrapper {
+    margin-top: 20px;
+}
+.toggle-label {
+    cursor: pointer;
+    background-color: #007acc;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.toggle-label:hover {
+    background-color: #005999;
+}
+#show-all {
+    display: none;
+}
+.hidden-sem {
+    display: none;
+}
+#show-all:checked ~ .semesters .hidden-sem {
+    display: block;
+}
