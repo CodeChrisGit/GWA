@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli("localhost", "root", "", "student_info");
+
 
 $rows = isset($_POST["rows"]) ? (int)$_POST["rows"] : 0;
 
@@ -143,3 +143,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit_grades"])) {
 
 </body>
 </html>
+
