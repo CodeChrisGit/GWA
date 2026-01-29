@@ -6,10 +6,6 @@ if (!isset($_SESSION['username'])) {
     exit();
 }
 
-$servername = "localhost";
-$db_username = "root";
-$db_password = "";
-$dbname = "student_info";
 
 $conn = new mysqli($servername, $db_username, $db_password, $dbname);
 if ($conn->connect_error) {
@@ -201,5 +197,6 @@ if ($final_gwa <= 1.50 && $final_gwa > 0 && !$overall_hasLowerGrade) {
     </div>
 </body>
 </html>
+
 
 <?php $conn->close(); ?>
