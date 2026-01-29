@@ -1,6 +1,6 @@
 <?php
 session_start();
-$conn = new mysqli("localhost", "root", "", "student_info");
+
 
 $username = $_POST['username'];
 $password = $_POST['password'];
@@ -17,3 +17,4 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
 ?>
+
