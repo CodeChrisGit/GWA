@@ -6,10 +6,6 @@ if (!isset($_SESSION['username'])) {
     exit();
 }
 
-$servername = "localhost";
-$db_username = "root";
-$db_password = "";
-$dbname = "student_info";
 
 $conn = new mysqli($servername, $db_username, $db_password, $dbname);
 
@@ -312,4 +308,5 @@ $final_gwa = $final_total_units > 0 ? round($final_weighted_total / $final_total
 
 <?php
 $conn->close();
+
 ?>
